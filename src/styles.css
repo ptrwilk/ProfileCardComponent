@@ -1,6 +1,24 @@
+@import url('./colors.css');
+
 .app{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden;
+    background-color: var(--dark-cyan);
+}
+
+.app .bg-pattern-bottom,
+.app .bg-pattern-top{
+    position: absolute;
+}
+
+.app .bg-pattern-top{
+    transform: translate(-48%, -43%);
+}
+
+.app .bg-pattern-bottom{
+    transform: translate(50%, 50%);
 }

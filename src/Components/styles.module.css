@@ -1,0 +1,75 @@
+@import url('../colors.css');
+
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    overflow: hidden;
+    background:  var(--white);
+}
+
+.container .img{
+    position: relative;
+}
+
+.container .img .avatar{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    border: 5px solid var(--white);
+    transform-origin: center;
+    transform: translate(-50%, 20%);
+}
+
+.container .name{
+    position: relative;
+    margin-top: 4rem;
+    margin-right: 2rem;
+    font-weight: 700;
+    text-align: left;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.container .name .age{
+    position: absolute;
+    left: calc(100% + 0.6rem);
+    top: 0;
+    font-weight: 400;
+    color: var(--dark-grayish-blue);
+}
+
+.container .country{
+    margin-top: 0.3rem;
+    color: var(--dark-gray);
+}
+
+.divider{
+    margin-top: 1.5rem !important;
+    width: 100%;
+    border-color: var(--dark-gray);
+}
+
+.container .stats {
+    display: flex;
+    gap : 1rem
+}
+
+.container .stat{
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
+}
+
+.container .stat .amount{
+    font-weight: 700;
+}
+
+.container .stat .activity{
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: var(--dark-gray);
+}
